@@ -23,7 +23,7 @@ Car Enthusiasts Hub is a modern, responsive webpage designed to showcase everyth
 
 The webpage is hosted on **GitHub Pages**. You can view it live at the following link:
 
-[Live Page on GitHub Pages](https://Collins101-dev.github.io/feb-2025-css-layouts-and-responsive-design-Collins101-dev)
+[Live Page on GitHub Pages](https://collins101-dev.github.io/feb-2025-css-layouts-and-responsive-design-Collins101-dev)
 
 ## Objectives
 
