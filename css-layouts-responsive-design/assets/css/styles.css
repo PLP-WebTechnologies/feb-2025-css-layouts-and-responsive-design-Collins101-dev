@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    background-color: #0A192F;
+    color: #CCD6F6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+header {
+    background-color: #112240;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #64FFDA;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #CCD6F6;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #233554;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 1200px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    color: #64FFDA;
+    font-size: 2.5rem;
+    animation: slideIn 1s ease-in-out;
+}
+
+.hero-content p {
+    margin: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #64FFDA;
+    color: #0A192F;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #52e0c4;
+    transform: scale(1.05);
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center-align the text */
+    gap: 1rem; /* Add spacing between the image and text */
+    margin: 0 auto; /* Center the entire section */
+    max-width: 800px; /* Limit the width for better readability */
+}
+
+.about-content img {
+    max-width: 60%; /* Adjust the image size */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem; /* Add spacing below the image */
+    transition: transform 0.3s ease;
+}
+
+.about-content img:hover {
+    transform: scale(1.05); /* Add a hover effect */
+}
+
+/* Contact Us Section */
+#contact {
+    text-align: center; /* Center-align the text */
+    margin: 2rem auto; /* Center the section and add spacing */
+    max-width: 600px; /* Limit the width for better readability */
+}
+
+#contact .btn {
+    margin-top: 1rem; /* Add spacing above the button */
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background-color: #233554;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.service-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #112240;
+    color: #CCD6F6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,56 @@
+/* This file contains media queries to make the webpage responsive across different screen sizes. */
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .grid-item {
+        width: 48%;
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .grid-item {
+        width: 30%;
+    }
+}
